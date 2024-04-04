@@ -26,3 +26,5 @@
 
 Cách tổ chức và mức độ phức tạp của các thành phần này có thể thay đổi tùy thuộc vào quy mô và yêu cầu cụ thể của dự án. <br><br>
 
+https://chat.openai.com/c/6bbba98b-0571-4b33-9f8e-26679a1fb666 <br><br>
+https://gemini.google.com/app/c7094ffb31c840b1  <br><br>
