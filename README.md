@@ -28,3 +28,15 @@ Cách tổ chức và mức độ phức tạp của các thành phần này có
 
 https://chat.openai.com/c/6bbba98b-0571-4b33-9f8e-26679a1fb666 <br><br>
 https://gemini.google.com/app/c7094ffb31c840b1  <br><br>
+
+
+[prop stae là gì](https://www.google.com/search?q=prop+stae+l%C3%A0+g%C3%AC&sca_esv=5b98a6ebe0c52b0a&sca_upv=1&rlz=1C5CHFA_enVN1013VN1013&sxsrf=ACQVn0-46-jH6Gu7NsuX8nv0fTKlIOhKxQ%3A1712226094630&ei=Ln8OZuXXJe2u2roP4KG30Ag&udm=&ved=0ahUKEwjlppShq6iFAxVtl1YBHeDQDYoQ4dUDCBA&uact=5&oq=prop+stae+l%C3%A0+g%C3%AC&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXByb3Agc3RhZSBsw6AgZ8OsMgoQIRgKGKABGMMEMgoQIRgKGKABGMMESNI0UABYmhtwAXgBkAEAmAGjAaABgAeqAQMxLja4AQPIAQD4AQGYAgigAp4HwgIFEAAYgATCAgYQABgHGB7CAgcQABiABBgNwgIGEAAYHhgNwgIKEAAYBRgeGA0YD8ICCBAAGAgYHhgNwgIKEAAYCBgeGA0YD8ICCBAhGKABGMMEmAMAkgcDMS43oAfgJA&sclient=gws-wiz-serp) <br><br>
+
+
+[react native cơ bản](https://www.google.com/search?q=react+native+c%C6%A1+b%E1%BA%A3n&rlz=1C5CHFA_enVN1013VN1013&oq=react+natve+cobna&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyBggCEEUYQDIGCAMQRRhAMgYIBBBFGEDSAQkxMzQ3MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8) <br><br>
+
+[Vòng đời của component](https://www.google.com/search?q=V%C3%B2ng+%C4%91%E1%BB%9Di+c%E1%BB%A7a+component&rlz=1C5CHFA_enVN1013VN1013&oq=V%C3%B2ng+%C4%91%E1%BB%9Di+c%E1%BB%A7a+component&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABNIBBzI3OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8) <br><br>
+
+
+
+
