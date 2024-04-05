@@ -30,6 +30,32 @@ https://chat.openai.com/c/6bbba98b-0571-4b33-9f8e-26679a1fb666 <br><br>
 https://gemini.google.com/app/c7094ffb31c840b1  <br><br>
 
 
+### Component trong React-Native
+![image](https://github.com/Experimenters1/The-basic-structure-of-React-Native/assets/64000769/b50723ae-16c6-4e18-9361-e1182dce6de1) <br><br>
+Vòng đời của component trong React Native tương tự như trong React dành cho phát triển web, vì React Native được xây dựng dựa trên cùng các nguyên tắc. Vòng đời của một component trong React và React Native bao gồm các giai đoạn: khởi tạo (mounting), cập nhật (updating), và dỡ bỏ (unmounting). Mỗi giai đoạn có một bộ các phương thức vòng đời riêng, cho phép bạn chạy code tại các thời điểm cụ thể trong suốt vòng đời. <br><br>
+#### Giai đoạn Khởi tạo (Mounting Phase)
+Đây là giai đoạn khi component được tạo và đưa vào DOM (hoặc giao diện người dùng gốc trên thiết bị di động trong trường hợp của React Native). Các phương thức vòng đời chính trong giai đoạn này là:  <br><br>
+**+)constructor(props):** Đây là phương thức đầu tiên được gọi khi một **component** được tạo. Nó được dùng để khởi tạo **state**, liên kết các phương thức xử lý sự kiện với một thể hiện **(instance) của component.** <br><br>
+**+)static getDerivedStateFromProps(props, state):** Phương thức này được gọi ngay trước khi **render** các **element lên DOM.** Nó cho phép **component** cập nhật state bên trong của nó dựa trên sự thay đổi của props. <br><br>
+**+)render():** Phương thức **render** là bắt buộc và chịu trách nhiệm mô tả giao diện sẽ được **render lên DOM.** Đây là phương thức duy nhất được yêu cầu trong một **class component.** <br><br>
+**+)componentDidMount():** Phương thức này được gọi sau khi **component** được gắn vào **DOM (hoặc native view).** Nó được sử dụng để thao tác với **DOM,** thực hiện các yêu cầu mạng và tích hợp với các framework JavaScript khác.<br><br>
+
+#### Giai đoạn Cập nhật (Updating Phase) 
+
+Giai đoạn này bắt đầu khi **state hoặc props** của **component** thay đổi và nó cần được **render** lại. Các phương thức được gọi trong giai đoạn này là: <br><br>
+
+**+)static getDerivedStateFromProps(props, state):** Được gọi trước khi quá trình **render** lại bắt đầu, cho phép cập nhật **state dựa trên props** mới. <br><br>
+**+)shouldComponentUpdate(nextProps, nextState):** Cho phép **component** quyết định có nên tiếp tục **render** lại hay không. Đây là một cách để tối ưu hiệu suất.<br><br>
+**+)render()** <br><br>
+**+) getSnapshotBeforeUpdate(prevProps, prevState):** Phương thức này được gọi ngay trước khi **output** được **render** gần đây nhất được áp dụng vào DOM (ví dụ). Nó cho phép **component** lấy một số thông tin từ DOM (ví dụ: vị trí cuộn) trước khi nó có khả năng bị thay đổi. <br><br>
+**+)componentDidUpdate(prevProps, prevState, snapshot):** Được gọi sau khi **component** được cập nhật trong DOM. Hữu ích cho các thao tác DOM và yêu cầu mạng dựa trên state mới. <br><br>
+
+
+
+
+
+
+
 [prop stae là gì](https://www.google.com/search?q=prop+stae+l%C3%A0+g%C3%AC&sca_esv=5b98a6ebe0c52b0a&sca_upv=1&rlz=1C5CHFA_enVN1013VN1013&sxsrf=ACQVn0-46-jH6Gu7NsuX8nv0fTKlIOhKxQ%3A1712226094630&ei=Ln8OZuXXJe2u2roP4KG30Ag&udm=&ved=0ahUKEwjlppShq6iFAxVtl1YBHeDQDYoQ4dUDCBA&uact=5&oq=prop+stae+l%C3%A0+g%C3%AC&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXByb3Agc3RhZSBsw6AgZ8OsMgoQIRgKGKABGMMEMgoQIRgKGKABGMMESNI0UABYmhtwAXgBkAEAmAGjAaABgAeqAQMxLja4AQPIAQD4AQGYAgigAp4HwgIFEAAYgATCAgYQABgHGB7CAgcQABiABBgNwgIGEAAYHhgNwgIKEAAYBRgeGA0YD8ICCBAAGAgYHhgNwgIKEAAYCBgeGA0YD8ICCBAhGKABGMMEmAMAkgcDMS43oAfgJA&sclient=gws-wiz-serp) <br><br>
 
 
