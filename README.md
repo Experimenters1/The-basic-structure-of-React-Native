@@ -50,8 +50,15 @@ Giai đoạn này bắt đầu khi **state hoặc props** của **component** th
 **+) getSnapshotBeforeUpdate(prevProps, prevState):** Phương thức này được gọi ngay trước khi **output** được **render** gần đây nhất được áp dụng vào DOM (ví dụ). Nó cho phép **component** lấy một số thông tin từ DOM (ví dụ: vị trí cuộn) trước khi nó có khả năng bị thay đổi. <br><br>
 **+)componentDidUpdate(prevProps, prevState, snapshot):** Được gọi sau khi **component** được cập nhật trong DOM. Hữu ích cho các thao tác DOM và yêu cầu mạng dựa trên state mới. <br><br>
 
+#### Giai đoạn Dỡ bỏ (Unmounting Phase)  <br><br>
 
+Giai đoạn này xảy ra khi một component bị loại bỏ khỏi DOM:
 
+**+)componentWillUnmount():** Phương thức này được gọi ngay trước khi **component** bị dỡ bỏ và hủy. Nó hữu ích cho việc thực hiện các tác vụ dọn dẹp như vô hiệu hóa bộ hẹn giờ, hủy yêu cầu mạng hoặc dọn dẹp bất kỳ đăng ký nào được tạo trong **componentDidMount.** <br><br>
+###
+Bên cạnh các phương thức vòng đời, **component trong React** còn có các thuộc tính lớp như **state và props.** Ngoài ra còn có các **API** liên quan đến vòng đời như **setState() và forceUpdate().** Bạn có thể sử dụng **setState() để thay đổi state của component và forceUpdate() để buộc component render lại.** <br><br>
+
+**React** đang không ngừng phát triển và một số phương thức vòng đời đã bị gỡ bỏ để ủng hộ các cách thực hành tốt hơn (ví dụ như tránh sử dụng **componentWillMount, componentWillReceiveProps và componentWillUpdate** trong code mới). Luôn tham khảo tài liệu React mới nhất để có thông tin cập nhật chính xác. <br><br>
 
 
 
