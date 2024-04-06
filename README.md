@@ -34,6 +34,8 @@ https://gemini.google.com/app/c7094ffb31c840b1  <br><br>
 ![image](https://github.com/Experimenters1/The-basic-structure-of-React-Native/assets/64000769/b50723ae-16c6-4e18-9361-e1182dce6de1) <br><br>
 Vòng đời của component trong React Native tương tự như trong React dành cho phát triển web, vì React Native được xây dựng dựa trên cùng các nguyên tắc. Vòng đời của một component trong React và React Native bao gồm các giai đoạn: khởi tạo (mounting), cập nhật (updating), và dỡ bỏ (unmounting). Mỗi giai đoạn có một bộ các phương thức vòng đời riêng, cho phép bạn chạy code tại các thời điểm cụ thể trong suốt vòng đời. <br><br>
 #### Giai đoạn Khởi tạo (Mounting Phase)
+ Là giai đoạn **component** được tạo ra và thêm vào **DOM.** Ở giai đoạn này, các hàm **constructor(), getDerivedStateFromProps(), render(), và componentDidMount()** thường được gọi.
+ 
 Đây là giai đoạn khi component được tạo và đưa vào DOM (hoặc giao diện người dùng gốc trên thiết bị di động trong trường hợp của React Native). Các phương thức vòng đời chính trong giai đoạn này là:  <br><br>
 **+)constructor(props):** Đây là phương thức đầu tiên được gọi khi một **component** được tạo. Nó được dùng để khởi tạo **state**, liên kết các phương thức xử lý sự kiện với một thể hiện **(instance) của component.** <br><br>
 **+)static getDerivedStateFromProps(props, state):** Phương thức này được gọi ngay trước khi **render** các **element lên DOM.** Nó cho phép **component** cập nhật state bên trong của nó dựa trên sự thay đổi của props. <br><br>
@@ -41,6 +43,7 @@ Vòng đời của component trong React Native tương tự như trong React d�
 **+)componentDidMount():** Phương thức này được gọi sau khi **component** được gắn vào **DOM (hoặc native view).** Nó được sử dụng để thao tác với **DOM,** thực hiện các yêu cầu mạng và tích hợp với các framework JavaScript khác.<br><br>
 
 #### Giai đoạn Cập nhật (Updating Phase) 
+Là giai đoạn **component** được cập nhật dựa trên sự thay đổi của **props hoặc state.** Các hàm **getDerivedStateFromProps(), shouldComponentUpdate(), render(), và componentDidUpdate()** thường được gọi.
 
 Giai đoạn này bắt đầu khi **state hoặc props** của **component** thay đổi và nó cần được **render** lại. Các phương thức được gọi trong giai đoạn này là: <br><br>
 
