@@ -74,9 +74,24 @@ Khi bạn đặt các **component** khác bên trong **SafeAreaView**, bạn có
 **StyleSheet** là một cách mà **React Native** cung cấp để bạn khai báo các **style** (các quy tắc thiết kế giao diện) cho ứng dụng của mình một cách có cấu trúc và tối ưu.  **StyleSheet.create** là một hàm giúp bạn tạo ra một đối tượng **style** từ các định nghĩa **style bằng JavaScript**. Việc này không chỉ giúp bạn quản lý **style** dễ dàng hơn (khi bạn tách **style** ra khỏi **logic component**), mà còn giúp tăng hiệu suất bởi vì **React Native** sẽ biết được các **style** nào có thể được tối ưu hóa và chia sẻ giữa các **component.** <br><br>
 
 
+## Trong TypeScript : 
+**interface :** được sử dụng để định nghĩa một **shape** hoặc cấu trúc cho một **object.** Nó cho phép bạn xác định các thuộc tính và kiểu dữ liệu của chúng mà một **object** nên có. Trong trường hợp của **React** hoặc **React Native components**, **interface** thường được sử dụng để xác định kiểu của **props** (thuộc tính được truyền vào **component**). <br><br>
 
+```typescript
+interface MyComponentProps {
+  name: string;
+}
 
+```
 
+Trong đoạn code trên, **interface MyComponentProps** định nghĩa một cấu trúc cho **props của component MyComponent**, với một yêu cầu rằng mọi **object props** truyền vào **MyComponent** phải có một thuộc tính **name** với kiểu dữ liệu là **string.** <br><br>
+
+Điều này có nghĩa là: <br><br>
+
++ ) Khi bạn sử dụng **MyComponent** trong code của mình, bạn cần phải cung cấp một **prop name** với kiểu dữ liệu là **string.** <br><br>
++ ) **TypeScript** sẽ kiểm tra ở thời điểm biên dịch để đảm bảo rằng **MyComponent** được sử dụng đúng cách, với một **prop name** có kiểu dữ liệu đúng như đã định nghĩa. <br><br>
+
+Việc sử dụng **interface** như vậy giúp tăng cường kiểm soát kiểu dữ liệu trong ứng dụng của bạn, giảm thiểu lỗi do sai kiểu dữ liệu và làm cho code của bạn trở nên dễ đọc và dễ bảo trì hơn. Nó cũng giúp phát triển ứng dụng hiệu quả hơn bởi vì các lỗi kiểu dữ liệu có thể được phát hiện sớm trong quá trình phát triển, trước khi chúng gây ra vấn đề trong ứng dụng chạy thực tế.<br><br>
 
 [prop stae là gì](https://www.google.com/search?q=prop+stae+l%C3%A0+g%C3%AC&sca_esv=5b98a6ebe0c52b0a&sca_upv=1&rlz=1C5CHFA_enVN1013VN1013&sxsrf=ACQVn0-46-jH6Gu7NsuX8nv0fTKlIOhKxQ%3A1712226094630&ei=Ln8OZuXXJe2u2roP4KG30Ag&udm=&ved=0ahUKEwjlppShq6iFAxVtl1YBHeDQDYoQ4dUDCBA&uact=5&oq=prop+stae+l%C3%A0+g%C3%AC&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXByb3Agc3RhZSBsw6AgZ8OsMgoQIRgKGKABGMMEMgoQIRgKGKABGMMESNI0UABYmhtwAXgBkAEAmAGjAaABgAeqAQMxLja4AQPIAQD4AQGYAgigAp4HwgIFEAAYgATCAgYQABgHGB7CAgcQABiABBgNwgIGEAAYHhgNwgIKEAAYBRgeGA0YD8ICCBAAGAgYHhgNwgIKEAAYCBgeGA0YD8ICCBAhGKABGMMEmAMAkgcDMS43oAfgJA&sclient=gws-wiz-serp) <br><br>
 
