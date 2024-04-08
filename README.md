@@ -63,6 +63,18 @@ Bên cạnh các phương thức vòng đời, **component trong React** còn c�
 
 **React** đang không ngừng phát triển và một số phương thức vòng đời đã bị gỡ bỏ để ủng hộ các cách thực hành tốt hơn (ví dụ như tránh sử dụng **componentWillMount, componentWillReceiveProps và componentWillUpdate** trong code mới). Luôn tham khảo tài liệu React mới nhất để có thông tin cập nhật chính xác. <br><br>
 
+### SafeAreaView
+
+**SafeAreaView** là một **component wrapper** mà **React Native** cung cấp để giúp đảm bảo rằng nội dung và giao diện không bị che khuất bởi các thanh điều hướng **(navigation bars)**, thanh **tab**, các vùng tai thỏ **(notch)** trên iPhone, hoặc các vùng an toàn khác trên màn hình của thiết bị. Sử dụng **SafeAreaView** giúp bạn dễ dàng quản lý **layout** của ứng dụng sao cho nội dung của bạn luôn được hiển thị đúng cách và không bị cắt xén hay che khuất bởi các yếu tố giao diện của hệ điều hành. <br><br>
+
+Khi bạn đặt các **component** khác bên trong **SafeAreaView**, bạn có thể yên tâm rằng chúng sẽ được đặt trong **"khu vực an toàn"** của màn hình, tránh xa các vùng không an toàn như đã nói trên. <br><br>
+
+## StyleSheet
+
+**StyleSheet** là một cách mà **React Native** cung cấp để bạn khai báo các **style** (các quy tắc thiết kế giao diện) cho ứng dụng của mình một cách có cấu trúc và tối ưu.  **StyleSheet.create** là một hàm giúp bạn tạo ra một đối tượng **style** từ các định nghĩa **style bằng JavaScript**. Việc này không chỉ giúp bạn quản lý **style** dễ dàng hơn (khi bạn tách **style** ra khỏi **logic component**), mà còn giúp tăng hiệu suất bởi vì **React Native** sẽ biết được các **style** nào có thể được tối ưu hóa và chia sẻ giữa các **component.** <br><br>
+
+
+
 
 
 
