@@ -93,6 +93,118 @@ Trong đoạn code trên, **interface MyComponentProps** định nghĩa một c�
 
 Việc sử dụng **interface** như vậy giúp tăng cường kiểm soát kiểu dữ liệu trong ứng dụng của bạn, giảm thiểu lỗi do sai kiểu dữ liệu và làm cho code của bạn trở nên dễ đọc và dễ bảo trì hơn. Nó cũng giúp phát triển ứng dụng hiệu quả hơn bởi vì các lỗi kiểu dữ liệu có thể được phát hiện sớm trong quá trình phát triển, trước khi chúng gây ra vấn đề trong ứng dụng chạy thực tế.<br><br>
 
+### 1.View 
+**View** là thành phần **container** cơ bản dùng để bao bọc và tổ chức các thành phần khác 
+
+```typescript
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+
+const ViewExample = () => (
+  <View style={styles.container}>
+    {/* Thêm các thành phần khác vào đây */}
+  </View>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f0f0',
+  },
+});
+
+export default ViewExample;
+
+
+```
+
+### 2. Text
+
+**Text** dùng để hiển thị văn bản. 
+```typescript
+import React from 'react';
+import { Text, StyleSheet } from 'react-native';
+
+const TextExample = () => <Text style={styles.textStyle}>Hello, React Native!</Text>;
+
+const styles = StyleSheet.create({
+  textStyle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+});
+
+export default TextExample;
+
+```
+
+### TouchableOpacity và Button 
+
++ ) **TouchableOpacity** cho phép tạo thành phần có thể tương tác với hiệu ứng làm mờ khi chạm vào và cho phép tùy chỉnh kiểu dáng nhiều hơn. <br>
++ ) **Button** cung cấp một nút bấm đơn giản với ít tùy chọn tùy chỉnh kiểu dáng. <br>
+
+#### TouchableOpacity Example  : 
+```typescript
+import React from 'react';
+import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+
+const TouchableOpacityExample = () => (
+  <TouchableOpacity
+    style={styles.buttonStyle}
+    onPress={() => alert('TouchableOpacity pressed')}
+  >
+    <Text style={styles.textStyle}>Press Me</Text>
+  </TouchableOpacity>
+);
+
+const styles = StyleSheet.create({
+  buttonStyle: {
+    backgroundColor: '#007bff',
+    padding: 10,
+    borderRadius: 5,
+  },
+  textStyle: {
+    color: '#ffffff',
+    fontSize: 18,
+  },
+});
+
+export default TouchableOpacityExample;
+
+```
+
+#### Button Example : 
+```typescript
+import React from 'react';
+import { Button, View, StyleSheet } from 'react-native';
+
+const ButtonExample = () => (
+  <View style={styles.container}>
+    <Button
+      title="Press Me"
+      onPress={() => alert('Button pressed')}
+      color="#841584"
+    />
+  </View>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default ButtonExample;
+
+
+
+```
+
 [prop stae là gì](https://www.google.com/search?q=prop+stae+l%C3%A0+g%C3%AC&sca_esv=5b98a6ebe0c52b0a&sca_upv=1&rlz=1C5CHFA_enVN1013VN1013&sxsrf=ACQVn0-46-jH6Gu7NsuX8nv0fTKlIOhKxQ%3A1712226094630&ei=Ln8OZuXXJe2u2roP4KG30Ag&udm=&ved=0ahUKEwjlppShq6iFAxVtl1YBHeDQDYoQ4dUDCBA&uact=5&oq=prop+stae+l%C3%A0+g%C3%AC&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXByb3Agc3RhZSBsw6AgZ8OsMgoQIRgKGKABGMMEMgoQIRgKGKABGMMESNI0UABYmhtwAXgBkAEAmAGjAaABgAeqAQMxLja4AQPIAQD4AQGYAgigAp4HwgIFEAAYgATCAgYQABgHGB7CAgcQABiABBgNwgIGEAAYHhgNwgIKEAAYBRgeGA0YD8ICCBAAGAgYHhgNwgIKEAAYCBgeGA0YD8ICCBAhGKABGMMEmAMAkgcDMS43oAfgJA&sclient=gws-wiz-serp) <br><br>
 
 
